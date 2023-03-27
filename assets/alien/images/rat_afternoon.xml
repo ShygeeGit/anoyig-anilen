@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rat_afternoon.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="full idle instance 10000" x="0" y="0" width="113" height="119" frameX="0" frameY="-4" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10001" x="0" y="0" width="113" height="119" frameX="0" frameY="-4" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10002" x="123" y="0" width="113" height="121" frameX="0" frameY="-2" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10003" x="123" y="0" width="113" height="121" frameX="0" frameY="-2" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10004" x="246" y="0" width="113" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10005" x="246" y="0" width="113" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10006" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10007" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10008" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10009" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10010" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10011" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10012" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10013" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10014" x="0" y="132" width="117" height="119" frameX="0" frameY="-4" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10015" x="0" y="132" width="117" height="119" frameX="0" frameY="-4" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10016" x="127" y="132" width="118" height="121" frameX="0" frameY="-2" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10017" x="127" y="132" width="118" height="121" frameX="0" frameY="-2" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10018" x="255" y="132" width="115" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10019" x="255" y="132" width="115" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10020" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10021" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10022" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10023" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10024" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10025" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10026" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+	<SubTexture name="full idle instance 10027" x="369" y="0" width="114" height="122" frameX="-1" frameY="0" frameWidth="118" frameHeight="123"/>
+</TextureAtlas>

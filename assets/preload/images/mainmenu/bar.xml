@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bar.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bar0000" x="0" y="0" width="502" height="105"/>
+	<SubTexture name="bar select0000" x="502" y="0" width="474" height="193" frameX="-14" frameY="0" frameWidth="502" frameHeight="193"/>
+	<SubTexture name="bar select0001" x="0" y="193" width="474" height="193" frameX="-14" frameY="0" frameWidth="502" frameHeight="193"/>
+	<SubTexture name="bar select0002" x="474" y="193" width="486" height="121" frameX="-8" frameY="-36" frameWidth="502" frameHeight="193"/>
+	<SubTexture name="bar select0003" x="474" y="193" width="486" height="121" frameX="-8" frameY="-36" frameWidth="502" frameHeight="193"/>
+	<SubTexture name="bar select0004" x="0" y="386" width="498" height="107" frameX="-2" frameY="-42" frameWidth="502" frameHeight="193"/>
+	<SubTexture name="bar select0005" x="0" y="386" width="498" height="107" frameX="-2" frameY="-42" frameWidth="502" frameHeight="193"/>
+	<SubTexture name="bar select0006" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0007" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0008" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0009" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0010" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0011" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0012" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0013" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0014" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0015" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0016" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0017" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0018" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0019" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0020" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0021" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0022" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+	<SubTexture name="bar select0023" x="0" y="0" width="502" height="105" frameX="0" frameY="-44" frameWidth="502" frameHeight="105"/>
+</TextureAtlas>

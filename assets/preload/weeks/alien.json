@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["Big Trouble", "black-alien", [165, 0, 77]],
+		["Alien Hit", "black-alien", [165, 0, 77]],
+		["Gimme", "black-alien", [165, 0, 77]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Annoyance",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

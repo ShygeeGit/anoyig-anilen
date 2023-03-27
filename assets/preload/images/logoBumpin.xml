@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="logoBumpin.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="logo bumpin0000" x="0" y="0" width="916" height="400" frameX="-75" frameY="-31" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0001" x="916" y="0" width="1066" height="462"/>
+	<SubTexture name="logo bumpin0002" x="916" y="0" width="1066" height="462"/>
+	<SubTexture name="logo bumpin0003" x="0" y="462" width="998" height="434" frameX="-34" frameY="-14" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0004" x="0" y="462" width="998" height="434" frameX="-34" frameY="-14" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0005" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0006" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0007" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0008" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0009" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0010" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0011" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0012" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+	<SubTexture name="logo bumpin0013" x="998" y="462" width="972" height="422" frameX="-47" frameY="-20" frameWidth="1066" frameHeight="462"/>
+</TextureAtlas>

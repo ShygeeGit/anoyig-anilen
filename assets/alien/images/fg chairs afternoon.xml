@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fg chairs afternoon.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fw chair idle0000" x="0" y="0" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0001" x="0" y="0" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0002" x="1439" y="0" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0003" x="1439" y="0" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0004" x="0" y="498" width="1428" height="488" frameX="-1" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0005" x="0" y="498" width="1428" height="488" frameX="-1" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0006" x="1438" y="498" width="1424" height="488" frameX="-5" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0007" x="1438" y="498" width="1424" height="488" frameX="-5" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0008" x="0" y="996" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0009" x="0" y="996" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0010" x="1433" y="996" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0011" x="1433" y="996" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0012" x="0" y="1494" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0013" x="0" y="1494" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0014" x="1433" y="1494" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0015" x="1433" y="1494" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0016" x="0" y="1992" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0017" x="0" y="1992" width="1429" height="488"/>
+	<SubTexture name="fw chair idle0018" x="1439" y="1992" width="1428" height="488" frameX="-1" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0019" x="1439" y="1992" width="1428" height="488" frameX="-1" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0020" x="0" y="2490" width="1424" height="488" frameX="-5" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0021" x="0" y="2490" width="1424" height="488" frameX="-5" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0022" x="1434" y="2490" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0023" x="1434" y="2490" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0024" x="0" y="1494" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0025" x="0" y="1494" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0026" x="1433" y="996" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+	<SubTexture name="fw chair idle0027" x="1433" y="996" width="1423" height="488" frameX="-6" frameY="0" frameWidth="1429" frameHeight="488"/>
+</TextureAtlas>
