@@ -6,6 +6,7 @@ import lime.utils.Assets as LimeAssets;
 import lime.utils.AssetLibrary;
 import lime.utils.AssetManifest;
 import flixel.system.FlxSound;
+import haxe.Json;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
@@ -31,6 +32,11 @@ class CoolUtil
 		var m:Float = Math.fround(f * snap);
 		trace(snap);
 		return (m / snap);
+	}
+
+	public static function getLangText(key:String):Dynamic {
+		var json_lang:Dynamic = Json.parse(Assets.getText(Paths.lang(ClientPrefs.language)));
+		return Reflect.getProperty(json_lang, key);
 	}
 	
 	public static function getDifficultyFilePath(num:Null<Int> = null)

@@ -60,6 +60,7 @@ import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
 import Conductor.Rating;
+import flixel.util.FlxAxes;
 
 #if !flash 
 import flixel.addons.display.FlxRuntimeShader;
@@ -514,12 +515,12 @@ class PlayState extends MusicBeatState
 				sky.screenCenter();
 				add(sky);
 
-				var clouds:FlxBackdrop = new FlxBackdrop(Paths.image('city sky'), XY, 0, 0);
+				var clouds:FlxBackdrop = new FlxBackdrop(Paths.image('city sky'), FlxAxes.XY, 0, 0);
 				clouds.screenCenter();
 				clouds.velocity.set(600, 0);
 				add(clouds);
 
-				var city:FlxBackdrop = new FlxBackdrop(Paths.image('la ciudad animada'), XY, 0, 0);
+				var city:FlxBackdrop = new FlxBackdrop(Paths.image('la ciudad animada'), FlxAxes.XY, 0, 0);
 				city.screenCenter();
 				city.velocity.set(1000, 0);
 				add(city);
@@ -554,12 +555,12 @@ class PlayState extends MusicBeatState
 				sky1.screenCenter();
 				add(sky1);
 
-				var clouds1:FlxBackdrop = new FlxBackdrop(Paths.image('city sky afternoon'), XY, 0, 0);
+				var clouds1:FlxBackdrop = new FlxBackdrop(Paths.image('city sky afternoon'), FlxAxes.XY, 0, 0);
 				clouds1.screenCenter();
 				clouds1.velocity.set(600, 0);
 				add(clouds1);
 
-				var city1:FlxBackdrop = new FlxBackdrop(Paths.image('la ciudad animada afternoon'), XY, 0, 0);
+				var city1:FlxBackdrop = new FlxBackdrop(Paths.image('la ciudad animada afternoon'), FlxAxes.XY, 0, 0);
 				city1.screenCenter();
 				city1.velocity.set(1000, 0);
 				add(city1);

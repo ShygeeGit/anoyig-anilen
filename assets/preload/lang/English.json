@@ -1,0 +1,62 @@
+{
+    "credit_quote_postroff": [
+        {
+            "bold": true, "scale": 0.7,
+            "text": "Got a Bucket of Chicken"
+        }
+    ],
+    "credit_description_postroff": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Hi. I did the voice of that lil\nfucker, i do art and voice acting,\nyou guys should totally play the\nmod again until your eyeballs\nfucking explode, idk, dou."
+        }
+    ],
+    "credit_quote_hev": [
+        {
+            "bold": true, "scale": 0.7,
+            "text": "Patatas con Frijoles"
+        }
+    ],
+    "credit_description_hev": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Heya, i didnt do much honestly, just\nthe whole art, animation, music, and\nthe rival character design of this\nmod. Idk man follow me i do variated\nstuff on twitter."
+        }
+    ],
+    "credit_quote_goodiebag": [
+        {
+            "bold": true, "scale": 0.3,
+            "text": "Me when i have to shoot my dog because im bored"
+        }
+    ],
+    "credit_description_goodiebag": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "I didn't really do anything that\nimportant for this mod, but I draw\nstuff sometimes on the side and\nI'm happy I was able to contribute\neven the tiniest bit."
+        }
+    ],
+    "credit_quote_grimlock": [
+        {
+            "bold": true, "scale": 0.4,
+            "text": "Check Out vsSnails-House. Otherwise they will murder me                                       -"
+        }
+    ],
+    "credit_description_grimlock": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Hi im a cool\ncharter lol i did\nall the charts for\nthe mod including\nthe easy and\nnormal difficulties\ncheck me out on\ntwitter for more\nstuff lol."
+        }
+    ],
+    "credit_quote_shygee": [
+        {
+            "bold": true, "scale": 0.7,
+            "text": "* keyboard smashing *"
+        }
+    ],
+    "credit_description_shygee": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "One of the coders for the mod i guess."
+        }
+    ]
+}

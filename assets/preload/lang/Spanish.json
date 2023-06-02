@@ -1,0 +1,62 @@
+{
+    "credit_quote_postroff": [
+        {
+            "bold": true, "scale": 0.7,
+            "text": "Tengo un cubo de Pollo"
+        }
+    ],
+    "credit_description_postroff": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Hola. Hice la voz de ese hijo de\nputa, hago arte y actuación de voz,\nchicos deberíais jugar al mod otra\nvez hasta que os exploten los putos\nojos."
+        }
+    ],
+    "credit_quote_hev": [
+        {
+            "bold": true, "scale": 0.7,
+            "text": "Patatas con Frijoles"
+        }
+    ],
+    "credit_description_hev": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Buenas, no hice mucho honestamente,\nsolo todo el arte, animacion, musica,\ny el diseno del personaje rival de\neste mod. Yo que se hombre sígueme hago\ncosas variadas en twitter."
+        }
+    ],
+    "credit_quote_goodiebag": [
+        {
+            "bold": true, "scale": 0.4,
+            "text": "Yo cuando tengo que disparar mi perro porque me aburro.                   -"
+        }
+    ],
+    "credit_description_goodiebag": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Realmente no hice nada tan\nimportante para este mod, pero a\nveces dibujo cosas por mi cuenta\ny me alegra haber podido\ncontribuir aunque sea un poquito."
+        }
+    ],
+    "credit_quote_grimlock": [
+        {
+            "bold": true, "scale": 0.4,
+            "text": "Echa un vistazo a vsSnails-House. Si no, me mataran.                           -"
+        }
+    ],
+    "credit_description_grimlock": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Hola soy un\nAltoCharter lol\nhice todos los\ncharts para el\nmod incluyendo\nlas dificultades\nfaciles y normales."
+        }
+    ],
+    "credit_quote_shygee": [
+        {
+            "bold": true, "scale": 0.7,
+            "text": "* rompe el teclado *"
+        }
+    ],
+    "credit_description_shygee": [
+        {
+            "bold": true, "scale": 0.5,
+            "text": "Uno de los Coders para el mod supongo."
+        }
+    ]
+}

@@ -176,6 +176,11 @@ class Paths
 	{
 		return getPath('data/$key.json', TEXT, library);
 	}
+	
+	inline static public function lang(key:String, ?library:String)
+	{
+		return getPath('lang/$key.json', TEXT, library);
+	}
 
 	inline static public function shaderFragment(key:String, ?library:String)
 	{
@@ -359,7 +364,8 @@ class Paths
 			localTrackedAssets.push(path);
 			return currentTrackedAssets.get(path);
 		}
-		trace('oh no its returning null NOOOO');
+
+		trace('[${path}] is Null');
 		return null;
 	}
 
