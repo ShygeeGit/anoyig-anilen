@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "bf",
+		"player1": "bf-afternoon",
 		"gfVersion": "gf",
 		"notes": [
 			{
@@ -7182,7 +7182,7 @@
 				]
 			]
 		],
-		"player2": "black-alien",
+		"player2": "black-alien-afternoon",
 		"splashSkin": "noteSplashes",
 		"song": "Gimme",
 		"needsVoices": true,

@@ -36,7 +36,8 @@ class CreditsState extends MusicBeatState {
 		{name: "hev", color: 0xffffffff},
 		{name: "goodiebag", color: 0xffffffff},
 		{name: "grimlock", color: 0xffffffff},
-		{name: "shygee", color: 0xffffffff}
+		{name: "shygee", color: 0xffffffff},
+		{name: "yirius", color: 0xffffffff}
 	];
 
 	var curSelected = 0;

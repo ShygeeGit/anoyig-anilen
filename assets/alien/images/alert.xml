@@ -1,35 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="alert.png">
-	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="target anim0000" x="0" y="0" width="436" height="292" frameX="0" frameY="-98" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0001" x="436" y="0" width="381" height="510" frameX="-27" frameY="0" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0002" x="817" y="0" width="410" height="444" frameX="-13" frameY="-30" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0003" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0004" x="1227" y="0" width="357" height="386" frameX="-39" frameY="-56" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0005" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0006" x="1584" y="0" width="379" height="411" frameX="-28" frameY="-45" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0007" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0008" x="0" y="510" width="268" height="290" frameX="-82" frameY="-99" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0009" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0010" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0011" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0012" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0013" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0014" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0015" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0016" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0017" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0018" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0019" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0020" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0021" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0022" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0023" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0024" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0025" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0026" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0027" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0028" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
-	<SubTexture name="target anim0029" x="1227" y="0" width="0" height="0" frameX="244" frameY="242" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0000" x="2" y="2" width="436" height="292" frameX="0" frameY="-98" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0001" x="440" y="2" width="381" height="510" frameX="-27" frameY="0" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0002" x="823" y="2" width="410" height="444" frameX="-13" frameY="-30" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0003" x="823" y="2" width="410" height="444" frameX="-13" frameY="-30" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0004" x="1235" y="2" width="357" height="386" frameX="-39" frameY="-56" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0005" x="1235" y="2" width="357" height="386" frameX="-39" frameY="-56" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0006" x="1594" y="2" width="379" height="411" frameX="-28" frameY="-45" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0007" x="1594" y="2" width="379" height="411" frameX="-28" frameY="-45" frameWidth="436" frameHeight="510"/>
+	<SubTexture name="target anim0008" x="2" y="514" width="268" height="290" frameX="-82" frameY="-99" frameWidth="436" frameHeight="510"/>
 </TextureAtlas>

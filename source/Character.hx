@@ -337,8 +337,11 @@ class Character extends FlxSprite
 		}
 	}
 
+	public var lockAnim = false;
 	public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void
 	{
+		if(lockAnim){return;}
+
 		specialAnim = false;
 		animation.play(AnimName, Force, Reversed, Frame);
 

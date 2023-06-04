@@ -39,6 +39,7 @@ import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
 import haxe.Json;
 import lime.utils.Assets;
+import flixel.effects.FlxFlicker;
 import openfl.Lib;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
@@ -61,6 +62,7 @@ import FunkinLua;
 import DialogueBoxPsych;
 import Conductor.Rating;
 import flixel.util.FlxAxes;
+import haxe.Timer;
 
 #if !flash 
 import flixel.addons.display.FlxRuntimeShader;
@@ -199,6 +201,7 @@ class PlayState extends MusicBeatState
 	public var instakillOnMiss:Bool = false;
 	public var cpuControlled:Bool = false;
 	public var practiceMode:Bool = false;
+	public var canStrums:Bool = true;
 
 	public var botplaySine:Float = 0;
 	public var botplayTxt:FlxText;
@@ -212,6 +215,14 @@ class PlayState extends MusicBeatState
 
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
+
+	var hasDodgeMechanic:Bool = false;
+	var canDodge:Bool = false;
+	var isDodging:Bool = false;
+	var alert_apple:FlxSprite;
+	var alert_info:FlxSprite;
+	var alert_dodged:FlxSprite;
+	var alert_missed:FlxSprite;
 
 	var dadbattleBlack:BGSprite;
 	var dadbattleLight:BGSprite;
@@ -590,6 +601,27 @@ class PlayState extends MusicBeatState
 				fgppl1.y += 400;
 				fgppl1.x += 150;
 		}
+		
+		alert_apple = new FlxSprite();
+		alert_apple.frames = Paths.getSparrowAtlas('alert');
+		alert_apple.animation.addByPrefix('alert', 'target anim', 24, false);
+		alert_apple.animation.play('alert');
+		alert_apple.antialiasing = ClientPrefs.globalAntialiasing;
+		alert_apple.visible = false;
+
+		alert_dodged = new FlxSprite();
+		alert_dodged.frames = Paths.getSparrowAtlas(CoolUtil.getLangText('gmp_atlas_dodged'));
+		alert_dodged.animation.addByPrefix('dodged', 'dodge anim', 24, false);
+		alert_dodged.animation.play('dodged');
+		alert_dodged.antialiasing = ClientPrefs.globalAntialiasing;
+		alert_dodged.visible = false;
+		
+		alert_missed = new FlxSprite();
+		alert_missed.frames = Paths.getSparrowAtlas('oww');
+		alert_missed.animation.addByPrefix('oww', 'oww animation', 24, false);
+		alert_missed.animation.play('oww');
+		alert_missed.antialiasing = ClientPrefs.globalAntialiasing;
+		alert_missed.visible = false;
 
 		switch(Paths.formatToSongPath(SONG.song))
 		{
@@ -609,6 +641,10 @@ class PlayState extends MusicBeatState
 
 		add(boyfriendGroup);
 		add(dadGroup);
+		
+		add(alert_apple);
+		add(alert_dodged);
+		add(alert_missed);
 
 		switch(curStage)
 		{
@@ -978,7 +1014,14 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) {
 			botplayTxt.y = timeBarBG.y - 78;
 		}
+		
+		alert_info = new FlxSprite(0, FlxG.height + 5).loadGraphic(Paths.image(CoolUtil.getLangText('gmp_img_alert_info')));
+		alert_info.setGraphicSize(FlxG.width); alert_info.updateHitbox();
+		alert_info.antialiasing = ClientPrefs.globalAntialiasing;
+		alert_info.screenCenter(X);
+		add(alert_info);
 
+		alert_info.cameras = [camHUD];
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -2090,6 +2133,15 @@ class PlayState extends MusicBeatState
 		#end
 		setOnLuas('songLength', songLength);
 		callOnLuas('onSongStart', []);
+
+		alert_apple.setPosition(boyfriend.x+(boyfriend.width/2)-(alert_apple.width/2),boyfriend.y+(boyfriend.height/2)-(alert_apple.height/2));
+		alert_dodged.setPosition(boyfriend.x, boyfriend.y - 200);
+		alert_missed.setPosition(boyfriend.x, boyfriend.y - alert_missed.height - 10);
+
+		if(hasDodgeMechanic){
+			FlxTween.tween(alert_info, {y: FlxG.height - alert_info.height + 100}, 2, {ease: FlxEase.circOut});
+			Timer.delay(function(){FlxTween.tween(alert_info, {y: FlxG.height + 5}, 2, {ease: FlxEase.circOut});}, 7000);
+		}
 	}
 
 	var debugNum:Int = 0;
@@ -2272,6 +2324,7 @@ class PlayState extends MusicBeatState
 
 	function eventPushed(event:EventNote) {
 		switch(event.event) {
+			case 'Throw Apple':{hasDodgeMechanic = true;}
 			case 'Change Character':
 				var charType:Int = 0;
 				switch(event.value1.toLowerCase()) {
@@ -2611,6 +2664,8 @@ class PlayState extends MusicBeatState
 		{
 			showCombo = false;
 		}
+
+		if(FlxG.keys.justPressed.SPACE && canDodge){isDodging = true;}
 
 		switch (curStage)
 		{
@@ -3078,8 +3133,11 @@ class PlayState extends MusicBeatState
 		callOnLuas('onUpdatePost', [elapsed]);
 	}
 
+	var can_pause = true;
 	function openPauseMenu()
 	{
+		if(!can_pause){return;}
+		
 		persistentUpdate = false;
 		persistentDraw = true;
 		paused = true;
@@ -3132,7 +3190,7 @@ class PlayState extends MusicBeatState
 				FlxG.sound.music.stop();
 
 				persistentUpdate = false;
-				persistentDraw = true;
+				persistentDraw = false;
 				for (tween in modchartTweens) {
 					tween.active = true;
 				}
@@ -3209,6 +3267,58 @@ class PlayState extends MusicBeatState
 
 	public function triggerEventNote(eventName:String, value1:String, value2:String) {
 		switch(eventName) {
+			case 'Throw Apple':{
+				can_pause = false;
+
+				alert_apple.visible = true;
+				alert_apple.animation.play('alert', true);
+				FlxFlicker.flicker(alert_apple, Conductor.stepCrochet * 4, 0.04, true, true, null, null);
+				
+				dad.playAnim('preattack', true);
+				dad.lockAnim = true;
+
+				canDodge = true;
+				Timer.delay(function(){
+					FlxFlicker.stopFlickering(alert_apple);
+					canDodge = false;
+					
+					alert_apple.visible = false;
+					
+					dad.lockAnim = false;
+					dad.playAnim('attack', true);
+					dad.lockAnim = true;
+					var dad_anim = dad.animation.getByName('attack');
+					Timer.delay(function(){dad.lockAnim = false;},Std.int(dad_anim.frames.length/dad_anim.frameRate*1000));
+
+					if(isDodging){
+						isDodging = false;
+						can_pause = true;
+
+						boyfriend.playAnim('dodge', true);
+
+						alert_dodged.visible = true;
+						alert_dodged.animation.play('dodged', true);
+						var alert_anim = alert_dodged.animation.getByName('dodged');
+						Timer.delay(function(){alert_dodged.visible = false;},Std.int(alert_anim.frames.length/alert_anim.frameRate*1000));
+					}else{
+						boyfriend.playAnim('hurt', true);
+						boyfriend.lockAnim = true;
+
+						alert_missed.visible = true;
+						alert_missed.animation.play('oww', true);
+						var oww_anim = alert_missed.animation.getByName('oww');
+						Timer.delay(function(){alert_missed.visible = false;},Std.int(oww_anim.frames.length/oww_anim.frameRate*1000));
+
+						keysBocked = true;
+						Timer.delay(function(){
+							boyfriend.lockAnim = false;
+
+							can_pause = true;
+							keysBocked = false;
+						}, Std.int(Conductor.stepCrochet * 8));
+					}
+				}, Std.int(Conductor.stepCrochet * 5));
+			}
 			case 'Dadbattle Spotlight':
 				var val:Null<Int> = Std.parseInt(value1);
 				if(val == null) val = 0;
@@ -4078,9 +4188,12 @@ class PlayState extends MusicBeatState
 		});
 	}
 
+	public var keysBocked:Bool = false;
 	public var strumsBlocked:Array<Bool> = [];
 	private function onKeyPress(event:KeyboardEvent):Void
 	{
+		if(keysBocked){return;}
+
 		var eventKey:FlxKey = event.keyCode;
 		var key:Int = getKeyFromEvent(eventKey);
 		//trace('Pressed: ' + eventKey);
@@ -4212,6 +4325,8 @@ class PlayState extends MusicBeatState
 	// Hold notes
 	private function keyShit():Void
 	{
+		if(keysBocked){return;}
+
 		// HOLDING
 		var parsedHoldArray:Array<Bool> = parseKeys();
 
